@@ -8,4 +8,4 @@ Basechain provides three tools:
 
 - Base Framework: Base is a framework which helps you build blockchain. It parameterize and modularize the architecture of blockhain. 
 
-- Gap Test Suite: Gap is a test enviroment for you to quickly verify your idea on distributed system. And it could a evolve process to tell you how your network and data changes.
+- Gap Test Suite: Gap is a test enviroment for you to quickly verify your idea on distributed system. And it could help simulate processing data of your distributed system to tell you how your nodes changes.
