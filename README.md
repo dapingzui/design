@@ -1,6 +1,7 @@
 Design Of Basechain
 ===
-Basechain is a project which aims at building blockchain and distributed system easily and rapidily.
+Basechain is a project which aims at building blockchain and distributed system easily and rapidily. 
+This repository contains documents describing the design and high-level overview of Basechain.
 
 Basechain provides three tools:
 
