@@ -9,3 +9,36 @@ Basechain provides three tools:
 - Base Framework: Base is a framework which helps you build blockchain. It parameterize and modularize the architecture of blockhain. 
 
 - Gap Test Suite: Gap is a test enviroment for you to quickly verify your idea on distributed system. And it could help simulate processing data of your distributed system to tell you how your nodes changes.
+
+### Guides
+
+In the final goal, you can build and deploy your blockchain like the followings:
+
+block(blk) is a tools of baseframework like node and bpm is blk package manager:
+
+```
+bpm init
+
+```
+
+And you will fill into basic information
+
+- chainName
+- version
+- description
+- author
+
+Then It will create four folders in you project root directory.
+
+```
+.
+├── chain.json
+├── application
+├── consensus
+├── negotiate
+└── node
+```
+
+![Architecture](Architecture.png)
+
+
