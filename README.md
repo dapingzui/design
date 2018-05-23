@@ -1,4 +1,4 @@
-Design Of Basechain
+Design Of Basechain (Draft)
 ===
 Basechain is a project which aims at building blockchain and distributed system easily and rapidily. 
 This repository contains documents describing the design and high-level overview of Basechain.
@@ -6,12 +6,10 @@ This repository contains documents describing the design and high-level overview
 Basechain provides three tools:
 
 - Basechain Network: Basechain Network is a blockchain and network. And you can deploy a smart contract or a chain contract here. A chain contract is a model file which contains how a new blockchain works. Anyone want to run it could start service and be rewarded according to the the chain contract.
-
 - Base Framework: Base is a framework which helps you build blockchain. It parameterize and modularize the architecture of blockhain. 
-
 - Gap Test Suite: Gap is a test enviroment for you to quickly verify your idea on distributed system. And it could help simulate processing data of your distributed system to tell you how your nodes changes.
 
-### Guides
+## Guides (draft)
 
 In the final goal, you can build and deploy your blockchain like the followings:
 
@@ -84,6 +82,48 @@ bpm node get webrtc
 
 
 And bpm will download the package and you blockchain could just run on the web browser and  It will be very interesting.
+
+
+
+### Negotiate Layer
+
+The negotiate layer is very import for censensus programming. You at least provide a avaialble network for consensus layer to program. A network is something like actor programming model. You could get a simple view:
+
+
+
+- POW: the actor are all the same and the message can be only transaction and block
+- PoS: the actor may be devided into two actors:
+  - bonded validators actor
+  - normal actor
+- DPoS: It can be devided into:
+  - super node
+  - normal node
+
+And for some BFT consensus.
+
+The negotiate simplify the operations you need to do for you consensus programming. And there are some other funcions:
+
+- random negoitating, for some special consensus and application support such DEFINITY
+
+- data exchange negotiating,  It provides data exchange betwwen different chains
+
+  
+
+### Consensus Layer
+
+Base Framework will provide a domain specific language to help you build your consensus.  The core of 
+
+DSL is **program it like a god**
+
+If you have a global view of actors, you could program it in a god's view and compiler will help you how every actor should handle it. For example for PoW:
+
+**The longest and hardist chain is the confirmed chain**
+
+Then you just explain what is longest and what is hardist. 
+
+### Applicaion Layer
+
+It is a layer to tell what your data can be illustrated and used.
 
 
 
