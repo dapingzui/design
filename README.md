@@ -38,6 +38,52 @@ Then It will create four folders in you project root directory.
 ├── consensus
 ├── negotiate
 └── node
+└── environment
+└── main.bc
 ```
 
 ![Architecture](Architecture.png)
+
+You can config your code and function in the different layers which are different directories.
+
+
+
+### Node Layer
+
+
+
+In the node directory,  The main goal is to provide:
+
+
+
+- Channel: Channel is an abstraction for establish a connection between two nodes, It has the followings:
+  - Method: send
+  - Event: data
+  - Event: connected
+  - Event: disconnected
+- Message: Message is an abstraction of data. It contains:
+  - headers
+  - content
+  - channel infomation
+
+You can get some terms of P2P network such as:
+
+- DHT:  neighborhood discovery 
+
+- STUN: Traversal of UDP over NATs
+
+And you may know the Channel is based on the neighborhood discovery techiniques and Messages if based on some transport techniques.
+
+If you need a WebRTC to implement your P2P network, you could just:
+
+```
+cd node
+bpm node get webrtc
+```
+
+
+
+And bpm will download the package and you blockchain could just run on the web browser and  It will be very interesting.
+
+
+
